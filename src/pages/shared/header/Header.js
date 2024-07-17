@@ -7,10 +7,10 @@ const Header = () => {
   console.log(date);
   return (
     <div>
-      <div className="w-full ">
+      <div className="w-full  ">
         <Image className="mx-auto" src={logo} alt="the dragon news"></Image>
         <p className="text-center">Journalism Without Fear or Favour</p>
-        <p className="text-center">{`${date.day}, ${date.month} ${date.date}, ${date.year}`}</p>
+        <p className="text-center mb-2">{`${date?.day}, ${date?.month} ${date?.date}, ${date?.year}`}</p>
       </div>
       <Marque></Marque>
     </div>
