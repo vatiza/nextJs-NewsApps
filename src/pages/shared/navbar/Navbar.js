@@ -13,7 +13,7 @@ const Navbar = () => {
       </li>
       <li>
         <Link href="/">
-          <BsSignpost /> Post
+          <BsSignpost /> News
         </Link>
       </li>
       <li>
@@ -55,13 +55,11 @@ const Navbar = () => {
             {navItems}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
       </div>
-
+      <div className="navbar-center hidden lg:flex">
+        <ul className="menu menu-horizontal px-1">{navItems}</ul>
+      </div>
       <div className="navbar-end">
-        <div className=" hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{navItems}</ul>
-        </div>
         <a className="btn">Button</a>
       </div>
     </div>
